@@ -12,6 +12,10 @@ pipeline {
         sh "ls -la"
       }
     }
-
+    stage (test2){
+      steps {
+        sh "cat index.html"
+      }
+    }
   }
 }
